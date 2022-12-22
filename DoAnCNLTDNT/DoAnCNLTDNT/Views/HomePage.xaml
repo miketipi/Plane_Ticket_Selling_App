@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAnCNLTDNT.Views.HomePage" BackgroundColor="#1B1A28"
+             NavigationPage.HasNavigationBar="False" Title="Trang chủ">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *" Padding="30" RowSpacing="40">
+            <Label Text="AIR THIEN PHUC"
+                   TextColor="#00B7FC"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <StackLayout Grid.Row="1"
+                         Spacing="15">
+                <Label Text="Gợi ý cho bạn"
+                       TextColor="White"
+                       FontSize="20"
+                       FontAttributes="Bold" />
+                <CollectionView SelectionMode="Single"
+                                ItemsSource="{Binding Tickets}"
+                                SelectedItem="{Binding SelectedTicket}"
+                                SelectionChanged="CollectionView_SelectionChanged" x:Name="CV_HomePage">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical"
+                                         Span="2"
+                                         VerticalItemSpacing="20"
+                                         HorizontalItemSpacing="20" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.EmptyView>
+                        <Label Text="Hiện tại hệ thống đang cập nhật"
+                               TextColor="Gray"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HorizontalTextAlignment='Center'/>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Spacing="10">
+                                <Image Source="{Binding HinhAnhChuyenBay}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="235"
+                                       HorizontalOptions="FillAndExpand" />
+                                <Label Text="{Binding TenChuyenBay}"
+                                       TextColor="White"
+                                       FontSize="14" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DoAnCNLTDNT.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="may_bay_background.jpg">
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Image Source="icon.webp"
+                   HeightRequest="100" />
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*">
+                     </ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Tên đăng nhập:"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       FontSize="20"
+                       VerticalOptions="Center" TextColor="White" />
+                <Entry Keyboard="Text"
+                       x:Name="EntUsrName"
+                       VerticalOptions="Center"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       Placeholder="@username"
+                       PlaceholderColor="White"/>
+                <Label Text="Mật khẩu: "
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       FontSize="20"
+                       VerticalOptions="Center"
+                       TextColor="White" />
+                <Entry Keyboard="Text"
+                       x:Name="EntPassword"
+                       VerticalOptions="Center"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       PlaceholderColor="White"
+                       Placeholder="Password"></Entry>
+                <Label Text="Nhớ mật khẩu?"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       FontSize="20"
+                       VerticalOptions="Center"
+                       TextColor="White" />
+                <Switch x:Name="SwtNhoMatKhau"
+                        IsToggled="False"
+                        Toggled="SwtNhoMatKhau_Toggled"  Grid.Row="2" Grid.Column="1"
+                        HorizontalOptions="Start"/>
+                <Button x:Name="BtnLogin"
+                        Clicked="BtnLogin_Clicked"
+                        Text="Đăng nhập"
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Grid.ColumnSpan="2" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

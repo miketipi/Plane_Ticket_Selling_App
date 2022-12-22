@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAnCNLTDNT.Views.Header"
+             xmlns:ImgCir="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+  <ContentView.Content>
+        <Grid HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              HeightRequest="170">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="80"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Aspect="AspectFill"
+                   Source="./Resoucres/may_bay_background.jpg"
+                   Grid.RowSpan="4"
+                   Grid.ColumnSpan="5"
+                   BackgroundColor="AliceBlue"
+                   Opacity="0.5"></Image>
+            <ImgCir:CircleImage Source="./Resouces/thien_phuc.jpg"
+                                Aspect="AspectFill"
+                                Margin="0"
+                                Grid.Row="1"
+                                Grid.Column="1"></ImgCir:CircleImage>
+            <StackLayout VerticalOptions="CenterAndExpand"
+                         Grid.Row="1"
+                         Grid.Column="2"
+                         Grid.ColumnSpan="3"
+                         Margin="10,0,0,0"
+                         Orientation="Vertical">
+                <Label Text="Thiên Phúc Võ Trần"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                       FontAttributes="Bold"></Label>
+                <Label Text="20520280@gm.uit.edu.vn"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="Center"
+                       TextColor="Black"
+                       FontAttributes="Bold"></Label>
+            </StackLayout>
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>

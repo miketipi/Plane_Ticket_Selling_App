@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAnCNLTDNT.Views.Account" Title="Đổi mật khẩu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nhập mật khẩu cũ: "
+                   FontSize="15" VerticalTextAlignment="Center">
+            </Label>
+            <Entry Placeholder="Old Password"
+                   x:Name="ent_pwd" />
+            <Label Text="Nhập mật khẩu mới: "
+                   FontSize="15"
+                   VerticalTextAlignment="Center" />
+            <Entry Placeholder="New Password"
+                   x:Name="ent_newpwd" />
+            <Label Text="Xác nhận mật khẩu mới: "
+                   FontSize="15"
+                   VerticalTextAlignment="Center" />
+            <Entry Placeholder="Confirm New Password"
+                   x:Name="ent_confirm_new_pwd" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button BackgroundColor="LightGreen"
+                        Text="Xác nhận"
+                        TextColor="White"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="btn_xacnhan"
+                        Clicked="btn_XacNhan_Clicked" />
+                <Button BackgroundColor="Red"
+                        Text="Huỷ"
+                        TextColor="White"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        x:Name="btn_huy"
+                        Clicked="btn_Huy_Clicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
