@@ -81,21 +81,23 @@
     <Shell.FlyoutHeader>
         <local:Header></local:Header>
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="Trang chủ">
-        <ShellContent Route="HomePage" Icon="icon_home.png"
+    <FlyoutItem Title="Trang chủ"
+                Icon="icon_home.png">
+        <ShellContent Route="HomePage"
                       ContentTemplate="{DataTemplate local:HomePage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Về chúng tôi" Icon="icon_about.png">
-        <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Các chuyến bay" Icon="icon_feed.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Đổi mật khẩu">
+    <FlyoutItem Title="Tài khoản" Icon="user.png">
         <ShellContent Route="AccountPage"
                       ContentTemplate="{DataTemplate local:Account}" />
     </FlyoutItem>
-
+    <FlyoutItem Title="Về chúng tôi"
+                Icon="icon_about.png">
+        <ShellContent Route="AboutPage"
+                      ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
     <MenuItem Text="Đăng xuất" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>

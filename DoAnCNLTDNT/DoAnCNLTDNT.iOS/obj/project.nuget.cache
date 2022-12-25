@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZAeN5mdyBLiofkKwY+JVhxFVFO6BlMvdm0R0UVVDClRJCqzd26Df6p/j4S+lXJY45qXTZvdhCdgAH6M3hPH9w==",
+  "dgSpecHash": "5Oow0vlYDadK9xjOchkhaJasdifI6WRniQ4ygZK0vdB32lRlFAvoLESriF3bfd1n0dpELCiio9E5oDfd803QwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",

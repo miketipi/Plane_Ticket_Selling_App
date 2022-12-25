@@ -1072,11 +1072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
       "projectName": "DoAnCNLTDNT.iOS",
-      "projectPath": "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
+      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\DoAnCNLTDNT.iOS.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1099,8 +1099,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.csproj": {
-              "projectPath": "C:\\Users\\DELL\\source\\repos\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.csproj"
+            "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Plane_Ticket_Selling_App\\DoAnCNLTDNT\\DoAnCNLTDNT\\DoAnCNLTDNT.csproj"
             }
           }
         }
