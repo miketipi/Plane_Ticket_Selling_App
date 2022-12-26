@@ -3,21 +3,26 @@ using DoAnCNLTDNT.Views;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-
+using Xamarin.Essentials;
+using System.Windows.Input;
 namespace DoAnCNLTDNT
 {
     public partial class AppShell : Xamarin.Forms.Shell
     {
+        public ICommand HelpCommand { get; }
+        
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
-            Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
-        }
+            HelpCommand = new Command<string>(async (url) => await Browser.OpenAsync(url));
 
-        private async void OnMenuItemClicked(object sender, EventArgs e)
+            BindingContext = this;
+        }
+       
+        
+        private  void OnMenuItemClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//LoginPage");
+            Navigation.PushAsync(new LoginPage());
         }
     }
 }

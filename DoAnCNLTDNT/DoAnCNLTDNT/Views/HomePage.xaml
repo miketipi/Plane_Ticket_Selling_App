@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DoAnCNLTDNT.Views.HomePage" BackgroundColor="#1B1A28"
+             x:Class="DoAnCNLTDNT.Views.HomePage"
              NavigationPage.HasNavigationBar="False" Title="Trang chủ">
     <ContentPage.Content>
         <Grid RowDefinitions="Auto, *" Padding="30" RowSpacing="40">
@@ -13,7 +13,7 @@
             <StackLayout Grid.Row="1"
                          Spacing="15">
                 <Label Text="Gợi ý cho bạn"
-                       TextColor="White"
+                       TextColor="Black"
                        FontSize="20"
                        FontAttributes="Bold" />
                 <CollectionView SelectionMode="Single"
@@ -31,7 +31,8 @@
                                TextColor="Gray"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
-                               HorizontalTextAlignment='Center'/>
+                               HorizontalTextAlignment='Center'
+                               FontAttributes="Bold" FontSize="20"/>
                     </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>

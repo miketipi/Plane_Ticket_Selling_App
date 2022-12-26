@@ -83,26 +83,30 @@
     </Shell.FlyoutHeader>
     <FlyoutItem Title="Trang chủ"
                 Icon="icon_home.png">
-        <ShellContent Route="HomePage"
+        <ShellContent 
                       ContentTemplate="{DataTemplate local:HomePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Các chuyến bay" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
+    <FlyoutItem Title="Chuyến bay của tôi" Icon="icon_feed.png">
+        <ShellContent  ContentTemplate="{DataTemplate local:MyCart}" />
     </FlyoutItem>
     <FlyoutItem Title="Tài khoản" Icon="user.png">
-        <ShellContent Route="AccountPage"
+        <ShellContent
                       ContentTemplate="{DataTemplate local:Account}" />
     </FlyoutItem>
     <FlyoutItem Title="Về chúng tôi"
                 Icon="icon_about.png">
-        <ShellContent Route="AboutPage"
+        <ShellContent
                       ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Đăng xuất" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem Text="Đăng xuất" IconImageSource="logout.png" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    </MenuItem>
+    <MenuItem Text="Help" IconImageSource="HelpIcon.png"
+              Command="{Binding HelpCommand}"
+              CommandParameter="https://github.com/miketipi/Plane_Ticket_Selling_App.git">
     </MenuItem>
     <TabBar>
-        <ShellContent Route="LoginPage"
+        <ShellContent
                       ContentTemplate="{DataTemplate local:LoginPage}" />
     </TabBar>
     <Shell.FlyoutFooter>
