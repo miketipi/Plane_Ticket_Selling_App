@@ -9,11 +9,16 @@
              BackgroundImageSource="may_bay_background.jpg">
     <ContentPage.Content>
 
-        <StackLayout>
-            <Image Source="icon.webp"
-                   HeightRequest="100" />
+        <StackLayout Margin="40,50" Spacing="10">
+            <Label Text="Air Thien Phuc"
+                   FontAttributes="Bold"
+                   FontSize="46"
+                   Margin="0,0,0,20"
+                   HorizontalTextAlignment="Center"
+                   TextColor="{StaticResource DarkTextColor}" />
             <Grid Margin="10">
                 <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -27,7 +32,7 @@
                 <Label Text="Tên đăng nhập:"
                        Grid.Row="0"
                        Grid.Column="0"
-                       FontSize="20"
+                       FontSize="10"
                        VerticalOptions="Center" TextColor="White" />
                 <Entry Keyboard="Text"
                        x:Name="EntUsrName"
@@ -39,7 +44,7 @@
                 <Label Text="Mật khẩu: "
                        Grid.Row="1"
                        Grid.Column="0"
-                       FontSize="20"
+                       FontSize="10"
                        VerticalOptions="Center"
                        TextColor="White" />
                 <Entry Keyboard="Text"
@@ -52,19 +57,32 @@
                 <Label Text="Nhớ mật khẩu?"
                        Grid.Row="2"
                        Grid.Column="0"
-                       FontSize="20"
+                       FontSize="10"
                        VerticalOptions="Center"
                        TextColor="White" />
                 <Switch x:Name="SwtNhoMatKhau"
                         IsToggled="False"
                         Toggled="SwtNhoMatKhau_Toggled"  Grid.Row="2" Grid.Column="1"
                         HorizontalOptions="Start"/>
+                <Label Text="Chưa có tài khoản?"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       FontSize="10" 
+                       VerticalOptions="Center" TextColor="White"/>
+                <Button x:Name="Btn_Signup"
+                        Clicked="Btn_Signup_Clicked"
+                        Text="Đăng ký"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        HeightRequest="25"
+                        WidthRequest="25"/>
                 <Button x:Name="BtnLogin"
                         Clicked="BtnLogin_Clicked"
                         Text="Đăng nhập"
                         Grid.Column="0"
-                        Grid.Row="3"
+                        Grid.Row="4"
                         Grid.ColumnSpan="2" />
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>

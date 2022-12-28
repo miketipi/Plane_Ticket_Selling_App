@@ -25,7 +25,11 @@ namespace DoAnCNLTDNT.Views
 
         private void BtnLogin_Clicked(object sender, EventArgs e)
         {
+        }
 
+        private void Btn_Signup_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SignUpPage());
         }
     }
 }

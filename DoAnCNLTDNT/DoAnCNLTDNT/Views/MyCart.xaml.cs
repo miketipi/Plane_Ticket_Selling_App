@@ -16,5 +16,20 @@ namespace DoAnCNLTDNT.Views
         {
             InitializeComponent();
         }
+
+        private void cmd_Update_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmd_Delete_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdMuahang_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

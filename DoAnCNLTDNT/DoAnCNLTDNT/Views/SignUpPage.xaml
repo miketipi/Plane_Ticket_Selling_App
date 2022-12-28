@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoAnCNLTDNT.Views.SignUpPage"
+             Title="Đăng ký">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txttennd"
+                   Placeholder="Nhập Vào Tên Người Dùng" />
+            <Entry x:Name="txttendn"
+                   Placeholder="Nhập Vào Tên Đăng Nhập " />
+            <Entry x:Name="txtEmail"
+                   Placeholder="Nhập Vào Email "
+                   Keyboard="Email" />
+            <Entry x:Name="txtmatkhau"
+                   Placeholder="Nhập Vào mật khẩu"
+                   IsPassword="True" />
+            <Entry x:Name="txtmatkhaunl"
+                   Placeholder="Nhập lại mật khẩu"
+                   IsPassword="True" />
+            <Button x:Name="cmd_SignUp"
+                    Text="Đăng Ký"
+                    Clicked="cmd_SignUp_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

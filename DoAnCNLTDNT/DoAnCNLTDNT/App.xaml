@@ -7,7 +7,11 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
+            <!--Đã thêm vào một vài style cụ thể để làm cho ứng dụng thêm đẹp hơn-->
             <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="DarkPink">#9b003d</Color>
+            <Color x:Key="DarkTextColor">#ffffff</Color>
+            <Color x:Key="PinkColor">#ff0266</Color>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
@@ -15,7 +19,11 @@
                         <VisualStateGroup x:Name="CommonStates">
                             <VisualState x:Name="Normal">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource DarkPink}" />
+                                    <Setter Property="HeightRequest"
+                                            Value="40" />
+                                    <Setter Property="CornerRadius"
+                                            Value="5" />
                                 </VisualState.Setters>
                             </VisualState>
                             <VisualState x:Name="Disabled">
@@ -26,6 +34,13 @@
                         </VisualStateGroup>
                     </VisualStateGroupList>
                 </Setter>
+            </Style>
+            <Style x:Key="Entry_cho_app"
+                   TargetType="Entry">
+                <Setter Property="FontSize"
+                        Value="Small" />
+                <Setter Property="BackgroundColor"
+                        Value="White" />
             </Style>
         </ResourceDictionary>        
     </Application.Resources>
